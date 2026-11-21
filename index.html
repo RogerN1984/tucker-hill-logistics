@@ -16,54 +16,45 @@
       --text: #283744;
       --muted: #657480;
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       line-height: 1.6;
       background: var(--white);
     }
-
     a {
       text-decoration: none;
       color: inherit;
     }
-
     .container {
       width: min(1120px, 90%);
       margin: auto;
     }
-
     header {
       background: var(--navy-dark);
       color: var(--white);
       padding: 20px 0;
       border-bottom: 3px solid var(--gold);
     }
-
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
     }
-
     .brand {
       font-size: 21px;
       font-weight: 800;
       letter-spacing: 1px;
     }
-
     .brand span {
       display: block;
       color: var(--gold);
@@ -71,24 +62,20 @@
       letter-spacing: 4px;
       margin-top: 3px;
     }
-
     nav {
       display: flex;
       gap: 25px;
       font-size: 14px;
     }
-
     nav a:hover {
       color: var(--gold);
     }
-
     .hero {
       background: linear-gradient(120deg, #0b1d2a, #203e52);
       color: var(--white);
       padding: 105px 0;
       text-align: center;
     }
-
     .hero .eyebrow {
       color: var(--gold);
       text-transform: uppercase;
@@ -97,25 +84,21 @@
       font-weight: bold;
       margin-bottom: 18px;
     }
-
     .hero h1 {
       font-size: clamp(36px, 6vw, 60px);
       line-height: 1.12;
       max-width: 850px;
       margin: 0 auto 22px;
     }
-
     .hero h1 span {
       color: var(--gold);
     }
-
     .hero p {
       max-width: 680px;
       margin: auto;
       color: #e0e8ed;
       font-size: 18px;
     }
-
     .button {
       display: inline-block;
       background: var(--gold);
@@ -126,43 +109,35 @@
       margin-top: 30px;
       transition: 0.2s;
     }
-
     .button:hover {
       background: #dfb86f;
       transform: translateY(-2px);
     }
-
     section {
       padding: 75px 0;
     }
-
     .section-heading {
       text-align: center;
       margin-bottom: 42px;
     }
-
     .section-heading h2 {
       color: var(--navy);
       font-size: 34px;
       margin-bottom: 12px;
     }
-
     .section-heading p {
       color: var(--muted);
       max-width: 650px;
       margin: auto;
     }
-
     .services {
       background: var(--cream);
     }
-
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
-
     .service-card {
       background: var(--white);
       padding: 30px 25px;
@@ -170,65 +145,54 @@
       border-bottom: 3px solid var(--gold);
       box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
-
     .service-card .number {
       color: var(--gold);
       font-size: 14px;
       font-weight: bold;
       letter-spacing: 2px;
     }
-
     .service-card h3 {
       color: var(--navy);
       margin: 12px 0;
       font-size: 20px;
     }
-
     .service-card p {
       color: var(--muted);
       font-size: 15px;
     }
-
     .about-content {
       max-width: 800px;
       margin: auto;
       text-align: center;
     }
-
     .about-content h2 {
       color: var(--navy);
       font-size: 34px;
       margin-bottom: 20px;
     }
-
     .about-content p {
       color: var(--muted);
       font-size: 17px;
       margin-bottom: 16px;
     }
-
     .highlight {
       background: var(--navy);
       color: var(--white);
       text-align: center;
       padding: 65px 20px;
     }
-
     .highlight h2 {
       font-size: 30px;
       margin-bottom: 15px;
     }
-
     .highlight p {
       color: #dce5eb;
       max-width: 700px;
       margin: auto;
     }
-
     .contact {
       background: var(--cream);
     }
-
     .contact-wrapper {
       max-width: 700px;
       margin: auto;
@@ -237,29 +201,24 @@
       border-radius: 8px;
       box-shadow: 0 5px 25px rgba(0,0,0,0.06);
     }
-
     .contact-wrapper h3 {
       color: var(--navy);
       font-size: 23px;
       margin-bottom: 8px;
     }
-
     .contact-wrapper > p {
       color: var(--muted);
       margin-bottom: 25px;
     }
-
     .contact-form {
       display: grid;
       gap: 15px;
     }
-
     .contact-form label {
       font-weight: bold;
       font-size: 14px;
       color: var(--navy);
     }
-
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -269,80 +228,65 @@
       font: inherit;
       margin-top: 5px;
     }
-
     .contact-form textarea {
       min-height: 130px;
       resize: vertical;
     }
-
     .contact-form button {
       border: none;
       cursor: pointer;
       font-size: 16px;
       width: 100%;
     }
-
     .form-note {
       color: var(--muted);
       font-size: 12px;
       margin-top: 10px;
     }
-
     footer {
       background: var(--navy-dark);
       color: var(--white);
       text-align: center;
       padding: 28px 15px;
     }
-
     footer p {
       font-size: 13px;
       color: #c5d0d7;
     }
-
     footer strong {
       color: var(--gold);
     }
-
     @media (max-width: 750px) {
       .header-content {
         flex-direction: column;
       }
-
       nav {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
       }
-
       .hero {
         padding: 75px 0;
       }
-
       .service-grid {
         grid-template-columns: 1fr;
       }
-
       section {
         padding: 55px 0;
       }
-
       .contact-wrapper {
         padding: 23px;
       }
     }
   </style>
 </head>
-
 <body>
-
 <header>
   <div class="container header-content">
     <a href="#" class="brand">
       TUCKER HILL LOGISTICS
       <span>LLC</span>
     </a>
-
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About Us</a>
@@ -350,32 +294,25 @@
     </nav>
   </div>
 </header>
-
 <main>
-
   <section class="hero">
     <div class="container">
       <div class="eyebrow">Tucker Hill Logistics LLC</div>
-
       <h1>
         Built on Family.<br>
         Backed by Experience.<br>
         <span>Driven by Reliability.</span>
       </h1>
-
       <p>
         Professional fitness equipment installation, removal,
         relocation, and facility support for commercial gyms
         and fitness facilities.
       </p>
-
       <a href="#contact" class="button">REQUEST A PROJECT QUOTE</a>
     </div>
   </section>
-
   <section class="services" id="services">
     <div class="container">
-
       <div class="section-heading">
         <h2>Our Services</h2>
         <p>
@@ -383,9 +320,7 @@
           fitness facility moving forward.
         </p>
       </div>
-
       <div class="service-grid">
-
         <div class="service-card">
           <div class="number">01 / INSTALLATION</div>
           <h3>Gym Equipment Installation</h3>
@@ -394,7 +329,6 @@
             of commercial fitness equipment.
           </p>
         </div>
-
         <div class="service-card">
           <div class="number">02 / REMOVAL</div>
           <h3>Equipment Removal</h3>
@@ -403,7 +337,6 @@
             for existing gym equipment and facilities.
           </p>
         </div>
-
         <div class="service-card">
           <div class="number">03 / RELOCATION</div>
           <h3>Equipment Relocation</h3>
@@ -412,7 +345,6 @@
             to support facility changes and upgrades.
           </p>
         </div>
-
         <div class="service-card">
           <div class="number">04 / UPGRADES</div>
           <h3>Facility Upgrades</h3>
@@ -421,7 +353,6 @@
             to new equipment and improved layouts.
           </p>
         </div>
-
         <div class="service-card">
           <div class="number">05 / COORDINATION</div>
           <h3>Project Coordination</h3>
@@ -430,7 +361,6 @@
             scheduling, and installation coordination.
           </p>
         </div>
-
         <div class="service-card">
           <div class="number">06 / RESIDENTIAL</div>
           <h3>Home Gym Installation</h3>
@@ -439,51 +369,41 @@
             for residential fitness spaces.
           </p>
         </div>
-
       </div>
     </div>
   </section>
-
   <section id="about">
     <div class="container about-content">
       <h2>Built on Family. Driven by Purpose.</h2>
-
       <p>
         Tucker Hill Logistics LLC was established with a
         commitment to dependable service, quality workmanship,
         and professional project support.
       </p>
-
       <p>
         From individual equipment installations to larger
         fitness facility projects, our goal is to make every
         job a smooth and professional experience.
       </p>
-
       <p>
         We believe that reliability, communication, and
         attention to detail make the difference.
       </p>
     </div>
   </section>
-
   <section class="highlight">
     <div class="container">
       <h2>Ready for Your Next Project?</h2>
-
       <p>
         Whether you're upgrading a commercial gym,
         relocating equipment, or building a new fitness
         space, let's discuss how we can help.
       </p>
-
       <a href="#contact" class="button">LET'S GET STARTED</a>
     </div>
   </section>
-
   <section class="contact" id="contact">
     <div class="container">
-
       <div class="section-heading">
         <h2>Contact Tucker Hill Logistics</h2>
         <p>
@@ -491,16 +411,24 @@
           We'd be glad to discuss your project.
         </p>
       </div>
-
       <div class="contact-wrapper">
         <h3>Request Information</h3>
-
         <p>
           Complete the information below and we'll
           follow up about your project.
         </p>
 
-        <form class="contact-form" id="contactForm">
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/roger@tuckerhilllogistics.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Tucker Hill Logistics Website Inquiry">
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Spam protection: leave this field empty -->
+          <input type="text" name="_honey" style="display:none">
 
           <label>
             Your Name
@@ -525,31 +453,20 @@
           <button type="submit" class="button">
             SEND MESSAGE
           </button>
-
         </form>
 
         <p class="form-note">
-          Contact form email delivery will be activated
-          during website setup.
+          Your inquiry will be sent directly to Tucker Hill Logistics.
+          We look forward to hearing from you.
         </p>
       </div>
     </div>
   </section>
-
 </main>
-
 <footer>
   <p><strong>TUCKER HILL LOGISTICS LLC</strong></p>
   <p>Built on Family. Backed by Experience. Driven by Reliability.</p>
   <p>© 2026 Tucker Hill Logistics LLC. All Rights Reserved.</p>
 </footer>
-
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thank you for your interest. Our contact form is being configured. Please check back soon.");
-  });
-</script>
-
 </body>
 </html>
