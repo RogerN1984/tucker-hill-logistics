@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tucker Hill Logistics LLC provides professional commercial gym equipment installation, removal, relocation, and fitness facility support.">
+  <meta name="description" content="Tucker Hill Logistics LLC provides professional commercial gym equipment installation, disassembly, removal, relocation, and fitness facility support.">
   <title>Tucker Hill Logistics LLC | Fitness Equipment Installation</title>
+
   <style>
     :root {
       --navy: #142b3d;
@@ -16,66 +17,86 @@
       --text: #283744;
       --muted: #657480;
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     html {
       scroll-behavior: smooth;
     }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       line-height: 1.6;
       background: var(--white);
     }
+
     a {
       text-decoration: none;
       color: inherit;
     }
+
     .container {
       width: min(1120px, 90%);
       margin: auto;
     }
+
     header {
       background: var(--navy-dark);
       color: var(--white);
-      padding: 20px 0;
+      padding: 16px 0;
       border-bottom: 3px solid var(--gold);
     }
+
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 25px;
     }
+
     .brand {
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold);
+      padding: 7px 12px;
+      border-radius: 3px;
+      flex-shrink: 0;
     }
-    .brand span {
+
+    .brand img {
       display: block;
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 4px;
-      margin-top: 3px;
+      width: 175px;
+      max-width: 100%;
+      height: auto;
     }
+
     nav {
       display: flex;
       gap: 25px;
       font-size: 14px;
     }
+
+    nav a {
+      transition: color 0.2s;
+    }
+
     nav a:hover {
       color: var(--gold);
     }
+
     .hero {
       background: linear-gradient(120deg, #0b1d2a, #203e52);
       color: var(--white);
       padding: 105px 0;
       text-align: center;
     }
+
     .hero .eyebrow {
       color: var(--gold);
       text-transform: uppercase;
@@ -84,21 +105,25 @@
       font-weight: bold;
       margin-bottom: 18px;
     }
+
     .hero h1 {
       font-size: clamp(36px, 6vw, 60px);
       line-height: 1.12;
       max-width: 850px;
       margin: 0 auto 22px;
     }
+
     .hero h1 span {
       color: var(--gold);
     }
+
     .hero p {
-      max-width: 680px;
+      max-width: 720px;
       margin: auto;
       color: #e0e8ed;
       font-size: 18px;
     }
+
     .button {
       display: inline-block;
       background: var(--gold);
@@ -109,35 +134,43 @@
       margin-top: 30px;
       transition: 0.2s;
     }
+
     .button:hover {
       background: #dfb86f;
       transform: translateY(-2px);
     }
+
     section {
       padding: 75px 0;
     }
+
     .section-heading {
       text-align: center;
       margin-bottom: 42px;
     }
+
     .section-heading h2 {
       color: var(--navy);
       font-size: 34px;
       margin-bottom: 12px;
     }
+
     .section-heading p {
       color: var(--muted);
-      max-width: 650px;
+      max-width: 680px;
       margin: auto;
     }
+
     .services {
       background: var(--cream);
     }
+
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
+
     .service-card {
       background: var(--white);
       padding: 30px 25px;
@@ -145,54 +178,80 @@
       border-bottom: 3px solid var(--gold);
       box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
+
     .service-card .number {
       color: var(--gold);
       font-size: 14px;
       font-weight: bold;
       letter-spacing: 2px;
     }
+
     .service-card h3 {
       color: var(--navy);
       margin: 12px 0;
       font-size: 20px;
     }
+
     .service-card p {
       color: var(--muted);
       font-size: 15px;
     }
+
     .about-content {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       text-align: center;
     }
+
+    .about-eyebrow {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
     .about-content h2 {
       color: var(--navy);
       font-size: 34px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
+
+    .about-content h3 {
+      color: var(--navy);
+      font-size: 23px;
+      margin: 32px 0 15px;
+    }
+
     .about-content p {
       color: var(--muted);
       font-size: 17px;
       margin-bottom: 16px;
     }
+
     .highlight {
       background: var(--navy);
       color: var(--white);
       text-align: center;
       padding: 65px 20px;
     }
+
     .highlight h2 {
       font-size: 30px;
       margin-bottom: 15px;
     }
+
     .highlight p {
       color: #dce5eb;
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
     }
+
     .contact {
       background: var(--cream);
     }
+
     .contact-wrapper {
       max-width: 700px;
       margin: auto;
@@ -201,24 +260,29 @@
       border-radius: 8px;
       box-shadow: 0 5px 25px rgba(0,0,0,0.06);
     }
+
     .contact-wrapper h3 {
       color: var(--navy);
       font-size: 23px;
       margin-bottom: 8px;
     }
+
     .contact-wrapper > p {
       color: var(--muted);
       margin-bottom: 25px;
     }
+
     .contact-form {
       display: grid;
       gap: 15px;
     }
+
     .contact-form label {
       font-weight: bold;
       font-size: 14px;
       color: var(--navy);
     }
+
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -228,65 +292,87 @@
       font: inherit;
       margin-top: 5px;
     }
+
     .contact-form textarea {
       min-height: 130px;
       resize: vertical;
     }
+
     .contact-form button {
       border: none;
       cursor: pointer;
       font-size: 16px;
       width: 100%;
     }
+
     .form-note {
       color: var(--muted);
       font-size: 12px;
       margin-top: 10px;
     }
+
     footer {
       background: var(--navy-dark);
       color: var(--white);
       text-align: center;
       padding: 28px 15px;
     }
+
     footer p {
       font-size: 13px;
       color: #c5d0d7;
     }
+
     footer strong {
       color: var(--gold);
     }
+
     @media (max-width: 750px) {
       .header-content {
         flex-direction: column;
+        gap: 18px;
       }
+
+      .brand img {
+        width: 165px;
+      }
+
       nav {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
       }
+
       .hero {
         padding: 75px 0;
       }
+
       .service-grid {
         grid-template-columns: 1fr;
       }
+
       section {
         padding: 55px 0;
       }
+
       .contact-wrapper {
         padding: 23px;
       }
     }
   </style>
 </head>
+
 <body>
+
 <header>
   <div class="container header-content">
-    <a href="#" class="brand">
-      TUCKER HILL LOGISTICS
-      <span>LLC</span>
+    <a href="#" class="brand" aria-label="Tucker Hill Logistics home">
+      <img
+        src="tucker-hill-compact-logo.png"
+        alt="Tucker Hill Logistics LLC logo"
+      >
     </a>
+
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About Us</a>
@@ -294,116 +380,171 @@
     </nav>
   </div>
 </header>
+
 <main>
+
   <section class="hero">
     <div class="container">
       <div class="eyebrow">Tucker Hill Logistics LLC</div>
+
       <h1>
         Built on Family.<br>
         Backed by Experience.<br>
         <span>Driven by Reliability.</span>
       </h1>
+
       <p>
-        Professional fitness equipment installation, removal,
-        relocation, and facility support for commercial gyms
-        and fitness facilities.
+        Professional fitness equipment installation, disassembly,
+        removal, relocation, and facility support for commercial
+        gyms, fitness centers, and residential fitness spaces.
       </p>
+
       <a href="#contact" class="button">REQUEST A PROJECT QUOTE</a>
     </div>
   </section>
+
   <section class="services" id="services">
     <div class="container">
+
       <div class="section-heading">
         <h2>Our Services</h2>
         <p>
-          Reliable equipment solutions to help keep your
-          fitness facility moving forward.
+          Reliable equipment solutions and hands-on project support
+          to help keep your fitness facility moving forward.
         </p>
       </div>
+
       <div class="service-grid">
+
         <div class="service-card">
           <div class="number">01 / INSTALLATION</div>
-          <h3>Gym Equipment Installation</h3>
+          <h3>Commercial Gym Equipment Installation</h3>
           <p>
-            Professional assembly, installation, and setup
-            of commercial fitness equipment.
+            Professional assembly, installation, and setup of
+            commercial fitness equipment, with attention to
+            manufacturer specifications and proper procedures.
           </p>
         </div>
+
         <div class="service-card">
-          <div class="number">02 / REMOVAL</div>
-          <h3>Equipment Removal</h3>
+          <div class="number">02 / DISASSEMBLY & REMOVAL</div>
+          <h3>Equipment Disassembly & Removal</h3>
           <p>
-            Dependable removal and disassembly services
-            for existing gym equipment and facilities.
+            Careful disassembly and removal of existing gym
+            equipment to support facility renovations,
+            replacements, and equipment upgrades.
           </p>
         </div>
+
         <div class="service-card">
           <div class="number">03 / RELOCATION</div>
           <h3>Equipment Relocation</h3>
           <p>
-            Moving and repositioning fitness equipment
-            to support facility changes and upgrades.
+            Moving and repositioning fitness equipment to
+            support facility moves, layout changes, and
+            equipment transitions.
           </p>
         </div>
+
         <div class="service-card">
           <div class="number">04 / UPGRADES</div>
-          <h3>Facility Upgrades</h3>
+          <h3>Fitness Facility Upgrades</h3>
           <p>
-            Helping gyms and fitness centers transition
-            to new equipment and improved layouts.
+            Installation support for gyms and fitness centers
+            transitioning to new equipment, improving layouts,
+            or updating existing workout spaces.
           </p>
         </div>
+
         <div class="service-card">
           <div class="number">05 / COORDINATION</div>
-          <h3>Project Coordination</h3>
+          <h3>Project Coordination & Equipment Handling</h3>
           <p>
             Assistance with equipment delivery, staging,
-            scheduling, and installation coordination.
+            handling, scheduling, and installation coordination
+            for individual and larger facility projects.
           </p>
         </div>
+
         <div class="service-card">
           <div class="number">06 / RESIDENTIAL</div>
           <h3>Home Gym Installation</h3>
           <p>
-            Equipment assembly and installation services
-            for residential fitness spaces.
+            Equipment assembly and installation support
+            for residential fitness rooms and home gym spaces.
           </p>
         </div>
+
       </div>
     </div>
   </section>
+
   <section id="about">
     <div class="container about-content">
+
+      <div class="about-eyebrow">Experience. Precision. Reliability.</div>
+
       <h2>Built on Family. Driven by Purpose.</h2>
+
       <p>
-        Tucker Hill Logistics LLC was established with a
-        commitment to dependable service, quality workmanship,
-        and professional project support.
+        Tucker Hill Logistics LLC was established with a commitment
+        to dependable service, quality workmanship, and professional
+        project support. We believe successful installations start
+        with experience, preparation, and attention to detail.
       </p>
+
       <p>
-        From individual equipment installations to larger
-        fitness facility projects, our goal is to make every
-        job a smooth and professional experience.
+        Our team's experience includes more than 30 years in fitness
+        equipment installation and repair, along with backgrounds
+        in industrial maintenance, warehouse operations, shipping
+        and receiving, and metal fabrication.
       </p>
+
       <p>
-        We believe that reliability, communication, and
-        attention to detail make the difference.
+        That experience brings a practical understanding of
+        mechanical systems, equipment handling, installation
+        procedures, and the importance of following specifications
+        and established safety and quality standards.
       </p>
+
+      <h3>Experience That Goes Beyond Installation</h3>
+
+      <p>
+        From equipment assembly and facility preparation to
+        coordinating larger projects, we understand that every
+        detail matters. Our focus is on careful workmanship,
+        clear communication, and dependable service from
+        the beginning of a project through completion.
+      </p>
+
+      <p>
+        Whether supporting a new commercial gym installation,
+        relocating an existing facility, or helping with an
+        equipment upgrade, we approach every project with
+        the same commitment: getting the job done right.
+      </p>
+
     </div>
   </section>
+
   <section class="highlight">
     <div class="container">
       <h2>Ready for Your Next Project?</h2>
+
       <p>
-        Whether you're upgrading a commercial gym,
-        relocating equipment, or building a new fitness
-        space, let's discuss how we can help.
+        Whether you're outfitting a new commercial gym,
+        upgrading an existing fitness center, relocating
+        equipment, or planning a facility project, let's
+        discuss how we can help.
       </p>
+
       <a href="#contact" class="button">LET'S GET STARTED</a>
     </div>
   </section>
+
   <section class="contact" id="contact">
     <div class="container">
+
       <div class="section-heading">
         <h2>Contact Tucker Hill Logistics</h2>
         <p>
@@ -411,8 +552,10 @@
           We'd be glad to discuss your project.
         </p>
       </div>
+
       <div class="contact-wrapper">
         <h3>Request Information</h3>
+
         <p>
           Complete the information below and we'll
           follow up about your project.
@@ -462,11 +605,14 @@
       </div>
     </div>
   </section>
+
 </main>
+
 <footer>
   <p><strong>TUCKER HILL LOGISTICS LLC</strong></p>
   <p>Built on Family. Backed by Experience. Driven by Reliability.</p>
   <p>© 2026 Tucker Hill Logistics LLC. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
