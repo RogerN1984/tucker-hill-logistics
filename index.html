@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tucker Hill Logistics LLC provides professional commercial gym equipment installation, disassembly, removal, relocation, and fitness facility support.">
+
+  <meta name="description" content="Tucker Hill Logistics LLC provides professional commercial gym equipment installation, disassembly, removal, relocation, and fitness facility support throughout West Virginia, Virginia, Maryland, Delaware, Southern Pennsylvania, and Washington, DC.">
+
   <title>Tucker Hill Logistics LLC | Fitness Equipment Installation</title>
 
   <style>
@@ -197,6 +199,38 @@
       font-size: 15px;
     }
 
+    /* SERVICE AREAS */
+
+    .service-areas {
+      background: var(--white);
+    }
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .area-card {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 20px 18px;
+      border-radius: 5px;
+      text-align: center;
+      color: var(--navy);
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .area-note {
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+      margin-top: 25px;
+    }
+
     .about-content {
       max-width: 850px;
       margin: auto;
@@ -311,20 +345,48 @@
       margin-top: 10px;
     }
 
+    /* FOOTER */
+
     footer {
       background: var(--navy-dark);
       color: var(--white);
       text-align: center;
-      padding: 28px 15px;
+      padding: 35px 15px;
     }
 
     footer p {
       font-size: 13px;
       color: #c5d0d7;
+      margin-bottom: 7px;
     }
 
     footer strong {
       color: var(--gold);
+    }
+
+    .footer-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px 30px;
+      margin: 20px 0;
+    }
+
+    .footer-contact a {
+      color: var(--white);
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+
+    .footer-contact a:hover {
+      color: var(--gold);
+    }
+
+    .footer-label {
+      color: var(--gold);
+      font-weight: bold;
+      margin-right: 5px;
     }
 
     @media (max-width: 750px) {
@@ -351,12 +413,33 @@
         grid-template-columns: 1fr;
       }
 
+      .area-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .area-card {
+        font-size: 15px;
+        padding: 17px 10px;
+      }
+
       section {
         padding: 55px 0;
       }
 
       .contact-wrapper {
         padding: 23px;
+      }
+
+      .footer-contact {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .area-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -375,6 +458,7 @@
 
     <nav>
       <a href="#services">Services</a>
+      <a href="#service-areas">Service Areas</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -476,6 +560,43 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS -->
+
+  <section class="service-areas" id="service-areas">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>Our Service Area</h2>
+        <p>
+          Providing professional fitness equipment installation,
+          removal, and relocation services throughout the region.
+        </p>
+      </div>
+
+      <div class="area-grid">
+
+        <div class="area-card">West Virginia</div>
+
+        <div class="area-card">Virginia</div>
+
+        <div class="area-card">Maryland</div>
+
+        <div class="area-card">Delaware</div>
+
+        <div class="area-card">Southern Pennsylvania</div>
+
+        <div class="area-card">Washington, DC</div>
+
+      </div>
+
+      <p class="area-note">
+        Additional surrounding areas may be available upon request.
+        Contact us to discuss your project location.
+      </p>
+
     </div>
   </section>
 
@@ -610,7 +731,23 @@
 
 <footer>
   <p><strong>TUCKER HILL LOGISTICS LLC</strong></p>
+
   <p>Built on Family. Backed by Experience. Driven by Reliability.</p>
+
+  <div class="footer-contact">
+
+    <a href="mailto:roger@tuckerhilllogistics.com">
+      <span class="footer-label">EMAIL:</span>
+      roger@tuckerhilllogistics.com
+    </a>
+
+    <a href="tel:+13047039675">
+      <span class="footer-label">PHONE:</span>
+      304-703-9675
+    </a>
+
+  </div>
+
   <p>© 2026 Tucker Hill Logistics LLC. All Rights Reserved.</p>
 </footer>
 
